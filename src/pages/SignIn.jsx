@@ -27,7 +27,7 @@ const SignIn = () => {
     }
     try {
       dispatch(signInStart())
-      const res = await fetch('https://blogify-backend-1-0stb.onrender.com/api/auth/signin', {
+      const res = await fetch('/api/auth/signin', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(formData),
@@ -91,7 +91,7 @@ const SignIn = () => {
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Dont Have an account?</span>
-            <Link to='https://blogify-backend-1-0stb.onrender.com/sign-up' className='text-blue-500'>
+            <Link to='/sign-up' className='text-blue-500'>
               Sign Up
             </Link>
           </div>
