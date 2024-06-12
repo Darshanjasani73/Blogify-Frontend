@@ -61,7 +61,7 @@ const PostPage = () => {
     return (
     <main className='p-3 flex flex-col max-w-6xl mx-auto min-h-screen'>
         <h1 className='text-3xl mt-10 p-3 text-center font-serif max-w-2xl mx-auto lg:text-4xl'>{post && post.title}</h1>
-        <Link to={`https://blogify-backend-1-0stb.onrender.com/search?category=${post && post.category}`} className='self-center mt-5'>
+        <Link to={`/search?category=${post && post.category}`} className='self-center mt-5'>
             <Button color='gray' pill size='xs'>{post && post.category}</Button>
         </Link>
         <img src={post && post.image} alt={post && post.title} className='mt-10 p-3 max-h-[600px] w-full object-cover' />
