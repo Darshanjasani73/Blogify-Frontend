@@ -28,7 +28,7 @@ const OAuth = () => {
         const data = await res.json()
         if(res.ok){
           dispatch(signInSuccess(data))
-          navigate('https://blogify-backend-1-0stb.onrender.com/')
+          navigate('/')
         }
     } catch (error) {
       console.log(error);
