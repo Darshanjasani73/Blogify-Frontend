@@ -45,14 +45,14 @@ const Header = () => {
     const urlParams = new URLSearchParams(location.search)
     urlParams.set('searchTerm', searchTerm)
     const searchQuery = urlParams.toString()
-    navigate(`https://blogify-backend-1-0stb.onrender.com/search?${searchQuery}`)
+    navigate(`/search?${searchQuery}`)
   }
 
   
   return (
     <Navbar className="border-b-2">
       <Link
-        to="https://blogify-backend-1-0stb.onrender.com/"
+        to="/"
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
@@ -96,14 +96,14 @@ const Header = () => {
               <span className="block text-sm">{currentUser.username}</span>
               <span className="block text-sm font-medium truncate">{currentUser.email}</span>
             </Dropdown.Header>
-            <Link  to={'https://blogify-backend-1-0stb.onrender.com/dashboard?tab=profile'}>
+            <Link  to={'/dashboard?tab=profile'}>
               <Dropdown.Item>Profile</Dropdown.Item>
               <Dropdown.Divider />
             </Link>
               <Dropdown.Item onClick={handleSignout}>Sign out</Dropdown.Item>
           </Dropdown>
         ) : (
-          <Link to="https://blogify-backend-1-0stb.onrender.com/sign-in">
+          <Link to="/sign-in">
             <Button gradientDuoTone="purpleToBlue" outline>
               Sign In
             </Button>
@@ -113,13 +113,13 @@ const Header = () => {
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
-          <Link to="https://blogify-backend-1-0stb.onrender.com/">Home</Link>
+          <Link to="/">Home</Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/projects"} as={"div"}>
-          <Link to="https://blogify-backend-1-0stb.onrender.com/dashboard?tab=profile">Profile</Link>
+          <Link to="/dashboard?tab=profile">Profile</Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/about"} as={"div"}>
-          <Link to="https://blogify-backend-1-0stb.onrender.com/about">About</Link>
+          <Link to="/about">About</Link>
         </Navbar.Link>
         {/* dashboard?tab=profile */}
       </Navbar.Collapse>
