@@ -94,7 +94,7 @@ const DashPosts = () => {
                     {new Date(post.updatedAt).toLocaleDateString()}
                   </Table.Cell>
                   <Table.Cell>
-                    <Link to={`https://blogify-backend-1-0stb.onrender.com/post/${post.slug}`}>
+                    <Link to={`/post/${post.slug}`}>
                       <img
                         src={post.image}
                         alt={post.title}
@@ -103,14 +103,14 @@ const DashPosts = () => {
                     </Link>
                   </Table.Cell>
                   <Table.Cell>
-                    <Link className="font-medium text-gray-900 dark:text-white" to={`https://blogify-backend-1-0stb.onrender.com/post/${post.slug}`}>{post.title}</Link>
+                    <Link className="font-medium text-gray-900 dark:text-white" to={`/post/${post.slug}`}>{post.title}</Link>
                   </Table.Cell>
                   <Table.Cell>{post.category}</Table.Cell>
                   <Table.Cell>
                     <span className="font-medium text-red-500 hover:underline cursor-pointer" onClick={()=>{setShowModal(true); setPostIdToDelete(post._id);}}>Delete</span>
                   </Table.Cell>
                   <Table.Cell>
-                    <Link className="text-teal-500 hover:underline cursor-pointer" to={`https://blogify-backend-1-0stb.onrender.com/update-post/${post._id}`}>
+                    <Link className="text-teal-500 hover:underline cursor-pointer" to={`/update-post/${post._id}`}>
                       <span>Edit</span>
                     </Link>
                   </Table.Cell>
