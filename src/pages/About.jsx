@@ -10,7 +10,7 @@ const About = () => {
           </h1>
           <div className="text-xl text-gray-500 flex flex-col gap-6">
             <p>
-              Welcome to DJ&apos;s Blog! This blog was created by Darshan Jasani
+              Welcome to Darshan Jasani&apos;s Blog! This blog was created by Darshan Jasani
               as a personal project to Showcase his skills in full stack web 
               development by using React, NodeJs, ExpressJs, MongoDB as a database. 
               Darshan is a passionate developer who loves coding.
