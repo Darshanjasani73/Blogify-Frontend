@@ -22,7 +22,7 @@ const Home = () => {
 
         <p className="text-gray-500 text-lg">
           Here you will find a variety of articles and tutorials and topics such
-          as History, Automobile and Science etc.
+          as Web/App Technology, Machine Learning and Web 3.0 etc.
         </p>
       <Link to={'/search'} className="text-xs sm:text-sm text-teal-500 font-bold hover:underline">View all posts</Link>
       </div>
