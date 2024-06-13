@@ -52,7 +52,7 @@ const DashSidebar = () => {
           </Link>
           {currentUser.isAdmin && (
             <>
-              <Link to="https://blogify-backend-1-0stb.onrender.com/dashboard?tab=posts">
+              <Link to="/dashboard?tab=posts">
                 <Sidebar.Item
                   active={tab === "posts"}
                   icon={HiDocumentText}
@@ -61,7 +61,7 @@ const DashSidebar = () => {
                   Posts
                 </Sidebar.Item>
               </Link>
-              <Link to="https://blogify-backend-1-0stb.onrender.com/dashboard?tab=users">
+              <Link to="/dashboard?tab=users">
                 <Sidebar.Item
                   active={tab === "users"}
                   icon={HiUserGroup}
@@ -70,7 +70,7 @@ const DashSidebar = () => {
                   Users
                 </Sidebar.Item>
               </Link>
-              <Link to="https://blogify-backend-1-0stb.onrender.com/dashboard?tab=comments">
+              <Link to="/dashboard?tab=comments">
                 <Sidebar.Item
                   active={tab === "comments"}
                   icon={HiAnnotation}
@@ -79,7 +79,7 @@ const DashSidebar = () => {
                   Comments
                 </Sidebar.Item>
               </Link>
-              <Link to="https://blogify-backend-1-0stb.onrender.com/dashboard?tab=dashboard">
+              <Link to="/dashboard?tab=dashboard">
                 <Sidebar.Item
                   active={tab === "dashboard" || !tab}
                   icon={HiChartPie}
