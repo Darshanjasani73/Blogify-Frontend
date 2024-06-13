@@ -124,9 +124,10 @@ const handleShowMore = async()=>{
             <label className="font-semibold">Category:</label>
             <Select onChange={handleChange} value={sidebarData.category} id='category'>
                 <option value="uncategorized">Uncategorized</option>
-                <option value="history">History</option>
-                <option value="science">Science</option>
-                <option value="automobile">automobile</option>
+                <option value="history">Web Development</option>
+                <option value="science">App Development</option>
+                <option value="automobile">Machine Learning</option>
+               <option value="automobile">Web 3.0</option>
             </Select>
           </div>
           <Button type='submit' outline gradientDuoTone='purpleToPink'>Apply Filters</Button>
